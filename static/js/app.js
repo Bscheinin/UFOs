@@ -31,7 +31,7 @@ function handleClick () {
         filteredData = filteredData.filter(row => row.datetime === date);
     }
     // Rebuild the table using the filtered data. If no date is entered, then filterData will be the original tableData
-    buildTable(filteredDate);
+    buildTable(filteredData);
 }
 // Listen for the form button click
 d3.selectAll("#filter-btn").on("click", handleClick);
